@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-bottom: 0;
+}
+
+.bg-escom {
+  background-color: #2196f3;
+}
+
+.bg-wave {
+  background-image: url(./img/wave.svg);
+  width: 100%;
+  min-height: calc(100vh - 109px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.monitor {
+  width: 200px;
+  height: 200px;
+}
+
+/* Sección para los iconos del footer */
+.social-icono {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.social-icono i {
+  font-size: 20px;
+}
+
+.regillaTemario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 10px; */
+}
+
+.t1 {
+  background: rgb(1, 66, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 66, 104, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
