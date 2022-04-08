@@ -5,6 +5,7 @@ import Fuentes from "../img/fuentes.svg";
 import Materiales from "../img/materiales.svg";
 import Objetivo from "../img/objetivo.svg";
 import Requerimientos from "../img/requerimientos.svg";
+import Contacto from "./Contacto";
 
 function Main() {
   return (
@@ -58,20 +59,18 @@ function Main() {
           </div>
           <div className="px-5">
             <p className="text-right">
-              Los contenidos de la Unidad de Aprendizaje de Gestión Empresarial
-              están organizados en cinco unidades temáticas, como se muestra a
-              continuación:
+              Los contenidos de la Unidad de Aprendizaje de Web Application
+              Development están organizados en cuatro unidades temáticas, como
+              se muestra a continuación:
               <br />
               <br />
-              Unidad temática I. Introducción a la gestión empresarial
+              Unidad temática I. Introduction to Web Applications
               <br />
-              Unidad temática II. Gestión estratégica de la empresa
+              Unidad temática II. Java Servlets
               <br />
-              Unidad temática III. Gestión operativa de la empresa
+              Unidad temática III. Java Server Pages (JSP)
               <br />
-              Unidad temática IV. Gestión del capital humano y la calidad
-              <br />
-              Unidad temática V. Retos de la gestión empresarial
+              Unidad temática IV. Frameworks.
               <br />
               <br />
               Este recurso es un apoyo educativo, en el cual podrás encontrar el
@@ -111,12 +110,9 @@ function Main() {
             <p>
               Promover el aprendizaje autónomo y autoregulado, desde un enfoque
               constructivista, con la finalidad de que el estudiante desarrolle
-              un proyecto empresarial que le permita conjugar los conocimientos,
-              capacidades, actitudes y valores en un contexto laboral,
-              utilizando herramientas informáticas, y diversas técnicas de
-              aprendizaje tales como: discusiones dirigidas, trabajo
-              colaborativo, construcción de ensayos argumentativos y comentarios
-              en foros orientados a la socialización del conocimiento.
+              proyectos que le permita conjugar los conocimientos, capacidades,
+              actitudes y valores en un contexto laboral, utilizando
+              herramientas informáticas, y diversas técnicas de aprendizaje.
             </p>{" "}
             <br />
             <h4>Propósito de la Unidad de Aprendizaje</h4>
@@ -244,11 +240,11 @@ function Main() {
               PDF con el glosario de términos y por último una serie de lecturas
               y actividades de aprendizaje ordenadas por tema y unidad temática.
             </p>
-            <br/>
-            <p>Ver glosario</p>
-            <p>Ver Presentaciones</p>
-            <p>Ver Videos</p>
-            <p>Ver Programa sintético</p>
+            <br />
+            <a href="#" className="d-block text-decoration-none">Ver glosario</a>
+            <a href="#" className="d-block text-decoration-none">Ver Presentaciones</a>
+            <a href="#" className="d-block text-decoration-none">Ver Videos</a>
+            <a href="#" className="d-block text-decoration-none">Ver Programa sintético</a>
           </div>
         </div>
       </div>
@@ -286,6 +282,7 @@ function Main() {
           </div>
         </div>
       </div>
+      <Contacto />
     </>
   );
 }
