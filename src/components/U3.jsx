@@ -1,6 +1,55 @@
-import Book from "../img/book.svg";
+import ObjetivoParticular from "../img/objetivoParticular.svg";
+import Presentaciones from "../img/presentaciones.svg";
+import EvaluacionUnidad from "../img/evaluacionUnidad.svg";
+import { useState } from "react";
 
-function U1() {
+function U3() {
+  const [c1, setC1] = useState(0);
+  const [c2, setC2] = useState(0);
+  const [c3, setC3] = useState(0);
+  const [c4, setC4] = useState(0);
+  const [c5, setC5] = useState(0);
+
+  const handleMostrar = (estado) => {
+    switch (estado) {
+      case 1:
+        if (c1 == 1) {
+          setC1(0);
+        } else {
+          setC1(1);
+        }
+        break;
+      case 2:
+        if (c2 == 1) {
+          setC2(0);
+        } else {
+          setC2(1);
+        }
+        break;
+      case 3:
+        if (c3 == 1) {
+          setC3(0);
+        } else {
+          setC3(1);
+        }
+        break;
+      case 4:
+        if (c4 == 1) {
+          setC4(0);
+        } else {
+          setC4(1);
+        }
+        break;
+      case 5:
+        if (c5 == 1) {
+          setC5(0);
+        } else {
+          setC5(1);
+        }
+        break;
+    }
+  };
+
   return (
     <div>
       <div
@@ -8,38 +57,113 @@ function U1() {
         style={{ height: "40vh" }}
       >
         <h2 className="text-white">
-          Unit I - Introduction to Web Applications
+          Unit III - Java Server Pages (JSP)
         </h2>
       </div>
       <div className="mx-auto py-5">
-        <h2 className="text-center mb-5">Objetivo Particular</h2>
-        <div className="d-flex mx-auto" style={{ width: "80%" }}>
-          <div className="my-auto">
-            <img src={Book} alt="Libro" style={{ width: 150, height: 150 }} />
-          </div>
+        <h2 className="text-center text-primary mb-5">Objetivo Particular</h2>
+        <div
+          className="d-flex justify-content-around mx-auto"
+          style={{ width: "80%" }}
+        >
           <div className="px-5">
             <p className="text-right">
-               The student determines the characteristics of Web applications based on J2EE specification
+            The student builds Web applications based on Java Server Pages specification
             </p>
+          </div>
+          <div className="my-auto">
+            <img
+              src={ObjetivoParticular}
+              alt="Libro"
+              style={{ width: 150, height: 150 }}
+            />
           </div>
         </div>
       </div>
       <div className="bg-light mx-auto py-5">
-        <h2 className="text-center mb-5">Contenidos</h2>
+        <h2 className="text-center text-primary mb-5">Contenidos</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
-          <div className="my-auto">
-            <img src={Book} alt="Libro" style={{ width: 150, height: 150 }} />
-          </div>
           <div className="px-5">
-            <p>1.1 J2EE Architecture</p>
-            <p>1.1.1 Multilayer architectures</p>
-            <p>1.1.2 The J2EE standard</p>
-            <p>1.2 Application Servers</p>
-            <p>1.2.1 Web Servers</p>
-            <p>1.2.2 Tomcat Application Server</p>
-            <p>1.3 Structure of a Web application</p>
-            <p>1.3.1 Directory Structure</p>
-            <p>1.3.2 Configuration Files</p>
+            <div className="d-flex align-items-center mb-3">
+              <h4 className="text-primary">3.1 Introduction to JSP</h4>
+              <div className="desplegable" onClick={() => handleMostrar(1)}>
+                {c1 == 0 ? (
+                  <i className="bi bi-chevron-down"></i>
+                ) : (
+                  <i class="bi bi-chevron-up"></i>
+                )}
+              </div>
+            </div>
+            {c1 == 1 ? (
+              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+            ) : (
+              <div></div>
+            )}
+
+            <div className="d-flex align-items-center mb-3">
+              <h4 className="text-primary">3.2 Elements of JSP: directives, declarations, scriplets, expressions, actions</h4>
+              <div className="desplegable" onClick={() => handleMostrar(2)}>
+                {c2 == 0 ? (
+                  <i className="bi bi-chevron-down"></i>
+                ) : (
+                  <i class="bi bi-chevron-up"></i>
+                )}
+              </div>
+            </div>
+            {c2 == 1 ? (
+              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+            ) : (
+              <div></div>
+            )}
+
+            <div className="d-flex align-items-center mb-3">
+              <h4 className="text-primary">3.3 Context: embedded objects, sessions</h4>
+              <div className="desplegable" onClick={() => handleMostrar(3)}>
+                {c3 == 0 ? (
+                  <i className="bi bi-chevron-down"></i>
+                ) : (
+                  <i class="bi bi-chevron-up"></i>
+                )}{" "}
+              </div>
+            </div>
+            {c3 == 1 ? (
+              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+            ) : (
+              <div></div>
+            )}
+
+            <div className="d-flex align-items-center mb-3">
+              <h4 className="text-primary">3.4 JavaBeans</h4>
+              <div className="desplegable" onClick={() => handleMostrar(4)}>
+                {c4 == 0 ? (
+                  <i className="bi bi-chevron-down"></i>
+                ) : (
+                  <i class="bi bi-chevron-up"></i>
+                )}{" "}
+              </div>
+            </div>
+            {c4 == 1 ? (
+              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+            ) : (
+              <div></div>
+            )}
+
+            <div className="d-flex align-items-center mb-3">
+              <h4 className="text-primary">3.5 Custom tags and taglibs</h4>
+              <div className="desplegable" onClick={() => handleMostrar(5)}>
+                {c5 == 0 ? (
+                  <i className="bi bi-chevron-down"></i>
+                ) : (
+                  <i class="bi bi-chevron-up"></i>
+                )}{" "}
+              </div>
+            </div>
+            {c5 == 1 ? (
+              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+            ) : (
+              <div></div>
+            )}
+
           </div>
         </div>
       </div>
@@ -47,21 +171,35 @@ function U1() {
         <h2 className="text-center mb-5">Presentaciones</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
           <div className="my-auto">
-            <img src={Book} alt="Libro" style={{ width: 150, height: 150 }} />
+            <img
+              src={Presentaciones}
+              alt="Libro"
+              style={{ width: 150, height: 150 }}
+            />
           </div>
           <div className="px-5">
-            <p>Unit I - Introduction to Web Applications</p>
+            <a href="#" className="text-decoration-none">
+              Unit III - Java Server Pages (JSP)
+            </a>
           </div>
         </div>
       </div>
       <div className="bg-light mx-auto py-5">
         <h2 className="text-center mb-5">Evaluación</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
-          <div className="my-auto">
-            <img src={Book} alt="Libro" style={{ width: 150, height: 150 }} />
-          </div>
           <div className="px-5">
-            <p>A continuación se muestra una lista con las evaluaciones que puedes realizar para reforzar los conocimientos que has adquirido en esta unidad de aprendizaje</p>
+            <p>
+              A continuación se muestra una lista con las evaluaciones que
+              puedes realizar para reforzar los conocimientos que has adquirido
+              en esta unidad de aprendizaje
+            </p>
+          </div>
+          <div className="my-auto">
+            <img
+              src={EvaluacionUnidad}
+              alt="Libro"
+              style={{ width: 150, height: 150 }}
+            />
           </div>
         </div>
       </div>
@@ -69,4 +207,4 @@ function U1() {
   );
 }
 
-export default U1;
+export default U3;

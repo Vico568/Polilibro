@@ -5,6 +5,9 @@ import Main from "./components/Main";
 import Navegador from "./components/Navegador";
 import Temario from "./components/Temario";
 import U1 from "./components/U1";
+import U2 from "./components/U2";
+import U3 from "./components/U3";
+import U4 from "./components/U4";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
