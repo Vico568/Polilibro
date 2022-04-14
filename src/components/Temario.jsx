@@ -2,13 +2,11 @@ function Temario() {
   return (
     <div>
       <div
-        className="bg-primary d-flex flex-column justify-content-center align-items-center"
-        style={{ height: "40vh" }}
+        className="bg-temario d-flex flex-column justify-content-center align-items-center"
       >
-        <h2 className="text-white">Unidades temáticas</h2>
-        <p className="text-white">
-          En este apartado podrás encontrar todas las unidades que se abordarán
-          dentro del curso de Web Application Development
+        <h2 className="text-white">Thematic Units</h2>
+        <p className="text-white my-3">
+        In this section you will find all the units that will be covered in the Web Application Development course
         </p>
       </div>
       <div className="regillaTemario bg-light">
@@ -19,8 +17,8 @@ function Temario() {
           <a href="/temario/u1" className="text-decoration-none">
             <div className="t1" style={{ height: "20%" }}></div>
             <div className="p-4" style={{ height: "80%" }}>
-              <h4 style={{ color: "rgb(1, 66, 104)" }}>
-                Unidad I - Introduction to Web Applications
+              <h4 className="title-temario" style={{ color: "rgb(1, 66, 104)" }}>
+                Unit I - Introduction to Web Applications
               </h4>
             </div>
           </a>
@@ -32,8 +30,8 @@ function Temario() {
           <a href="/temario/u2" className="text-decoration-none">
             <div className="t1" style={{ height: "20%" }}></div>
             <div className="p-4" style={{ height: "80%" }}>
-              <h4 style={{ color: "rgb(1, 66, 104)" }}>
-                Unidad II - Java Servlets
+              <h4 className="title-temario" style={{ color: "rgb(1, 66, 104)" }}>
+                Unit II - Java Servlets
               </h4>
             </div>
           </a>
@@ -45,8 +43,8 @@ function Temario() {
           <a href="/temario/u3" className="text-decoration-none">
             <div className="t1" style={{ height: "20%" }}></div>
             <div className="p-4" style={{ height: "80%" }}>
-              <h4 style={{ color: "rgb(1, 66, 104)" }}>
-                Unidad III - Java Server Pages (JSP)
+              <h4 className="title-temario" style={{ color: "rgb(1, 66, 104)" }}>
+                Unit III - Java Server Pages (JSP)
               </h4>
             </div>
           </a>
@@ -58,8 +56,8 @@ function Temario() {
           <a href="/temario/u4" className="text-decoration-none">
             <div className="t1" style={{ height: "20%" }}></div>
             <div className="p-4" style={{ height: "80%" }}>
-              <h4 style={{ color: "rgb(1, 66, 104)" }}>
-                Unidad IV - Frameworks
+              <h4 className="title-temario" style={{ color: "rgb(1, 66, 104)" }}>
+                Unit IV - Frameworks
               </h4>
             </div>
           </a>

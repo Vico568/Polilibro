@@ -3,7 +3,7 @@ import contacto from "../img/contacto.png";
 function Contacto() {
   return (
     <div className="p-5 bg-light">
-      <h3 className="text-center mb-5">Contacto</h3>
+      <h3 className="text-center mb-5">Contact</h3>
       <div className="row w-75 mx-auto">
         <div className="col-md d-inline-block">
           <img
