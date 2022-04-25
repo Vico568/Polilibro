@@ -2,6 +2,9 @@ import ObjetivoParticular from "../img/objetivoParticular.svg";
 import Presentaciones from "../img/presentaciones.svg";
 import EvaluacionUnidad from "../img/evaluacionUnidad.svg";
 import { useState } from "react";
+import Evaluacion from "./Evaluacion";
+import preguntas from "../js/preguntas";
+import Carrusel from "./Carrusel";
 
 function U2() {
   const [c1, setC1] = useState(0);
@@ -93,22 +96,21 @@ function U2() {
   return (
     <div>
       <div
-        className="bg-primary d-flex flex-column justify-content-center align-items-center"
+        className="bg-unidad d-flex flex-column justify-content-center align-items-center"
         style={{ height: "40vh" }}
       >
-        <h2 className="text-white">
-          Unit II - Java Servlets
-        </h2>
+        <h2 className="text-white">Unit II - Java Servlets</h2>
       </div>
       <div className="mx-auto py-5">
-        <h2 className="text-center text-primary mb-5">Objetivo Particular</h2>
+        <h2 className="text-center text-primary mb-5">Particular Objective</h2>
         <div
           className="d-flex justify-content-around mx-auto"
           style={{ width: "80%" }}
         >
           <div className="px-5">
             <p className="text-right">
-            The student builds Web applications based on Java Servlet specification
+              The student builds Web applications based on Java Servlet
+              specification
             </p>
           </div>
           <div className="my-auto">
@@ -121,9 +123,9 @@ function U2() {
         </div>
       </div>
       <div className="bg-light mx-auto py-5">
-        <h2 className="text-center text-primary mb-5">Contenidos</h2>
+        <h2 className="text-center text-primary mb-5">Contents</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
-          <div className="px-5">
+          <div className="px-5" style={{ width: "100%" }}>
             <div className="d-flex align-items-center mb-3">
               <h4 className="text-primary">2.1 Introduction to Servlets</h4>
               <div className="desplegable" onClick={() => handleMostrar(1)}>
@@ -135,13 +137,17 @@ function U2() {
               </div>
             </div>
             {c1 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{ width: 600 }}>
+                <Carrusel unidad={8} />
+              </div>
             ) : (
               <div></div>
             )}
 
             <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">2.2 Life Cycle and the Servlet API</h4>
+              <h4 className="text-primary">
+                2.2 Life Cycle and the Servlet API
+              </h4>
               <div className="desplegable" onClick={() => handleMostrar(2)}>
                 {c2 == 0 ? (
                   <i className="bi bi-chevron-down"></i>
@@ -151,7 +157,9 @@ function U2() {
               </div>
             </div>
             {c2 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{ width: 600 }}>
+                <Carrusel unidad={9} />
+              </div>
             ) : (
               <div></div>
             )}
@@ -167,29 +175,15 @@ function U2() {
               </div>
             </div>
             {c3 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
-            ) : (
-              <div></div>
-            )}
-
-            <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">2.3.1 Parameters</h4>
-              <div className="desplegable" onClick={() => handleMostrar(4)}>
-                {c4 == 0 ? (
-                  <i className="bi bi-chevron-down"></i>
-                ) : (
-                  <i class="bi bi-chevron-up"></i>
-                )}{" "}
+              <div className="mx-auto" style={{ width: 600 }}>
+                <Carrusel unidad={10} />
               </div>
-            </div>
-            {c4 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
             ) : (
               <div></div>
             )}
 
             <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">2.3.2 Sessions</h4>
+              <h4 className="text-primary">2.3.1 Sessions</h4>
               <div className="desplegable" onClick={() => handleMostrar(5)}>
                 {c5 == 0 ? (
                   <i className="bi bi-chevron-down"></i>
@@ -199,31 +193,15 @@ function U2() {
               </div>
             </div>
             {c5 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
-            ) : (
-              <div></div>
-            )}
-
-            <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">
-                2.3.3 Attributes
-              </h4>
-              <div className="desplegable" onClick={() => handleMostrar(6)}>
-                {c6 == 0 ? (
-                  <i className="bi bi-chevron-down"></i>
-                ) : (
-                  <i class="bi bi-chevron-up"></i>
-                )}{" "}
+              <div className="mx-auto" style={{ width: 600 }}>
+                <Carrusel unidad={11} />
               </div>
-            </div>
-            {c6 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
             ) : (
               <div></div>
             )}
 
             <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">2.3.4 Cookies</h4>
+              <h4 className="text-primary">2.3.2 Cookies</h4>
               <div className="desplegable" onClick={() => handleMostrar(7)}>
                 {c7 == 0 ? (
                   <i className="bi bi-chevron-down"></i>
@@ -233,7 +211,9 @@ function U2() {
               </div>
             </div>
             {c7 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{ width: 600 }}>
+                <Carrusel unidad={12} />
+              </div>
             ) : (
               <div></div>
             )}
@@ -249,7 +229,9 @@ function U2() {
               </div>
             </div>
             {c8 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{ width: 600 }}>
+                <Carrusel unidad={13} />
+              </div>
             ) : (
               <div></div>
             )}
@@ -265,32 +247,18 @@ function U2() {
               </div>
             </div>
             {c9 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
-            ) : (
-              <div></div>
-            )}
-
-            <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">2.6 Developing Applications with Servlets</h4>
-              <div className="desplegable" onClick={() => handleMostrar(10)}>
-                {c10 == 0 ? (
-                  <i className="bi bi-chevron-down"></i>
-                ) : (
-                  <i class="bi bi-chevron-up"></i>
-                )}{" "}
+              <div className="mx-auto" style={{ width: 600 }}>
+                <Carrusel unidad={14} />
               </div>
-            </div>
-            {c10 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
             ) : (
               <div></div>
             )}
-
+            
           </div>
         </div>
       </div>
       <div className="mx-auto py-5">
-        <h2 className="text-center mb-5">Presentaciones</h2>
+        <h2 className="text-center mb-5">Presentations</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
           <div className="my-auto">
             <img
@@ -300,20 +268,23 @@ function U2() {
             />
           </div>
           <div className="px-5">
-            <a href="#" className="text-decoration-none">
+            <a
+              href="https://drive.google.com/file/d/1PwFoxuk_poUrUltidE_r7rgk7hlh4WLx/view?usp=sharing"
+              className="text-decoration-none"
+              target="_blank"
+            >
               Unit II - Java Servlets
             </a>
           </div>
         </div>
       </div>
       <div className="bg-light mx-auto py-5">
-        <h2 className="text-center mb-5">Evaluación</h2>
+        <h2 className="text-center mb-5">Evaluation</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
           <div className="px-5">
             <p>
-              A continuación se muestra una lista con las evaluaciones que
-              puedes realizar para reforzar los conocimientos que has adquirido
-              en esta unidad de aprendizaje
+              Below is a list of assessments you can take to reinforce the
+              knowledge you have gained in this learning unit.
             </p>
           </div>
           <div className="my-auto">
@@ -324,6 +295,9 @@ function U2() {
             />
           </div>
         </div>
+        <hr className="mx-auto my-5" style={{ width: "90%" }} />
+
+        <Evaluacion preguntas={preguntas[1]} />
       </div>
     </div>
   );

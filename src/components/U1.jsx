@@ -2,6 +2,9 @@ import ObjetivoParticular from "../img/objetivoParticular.svg";
 import Presentaciones from "../img/presentaciones.svg";
 import EvaluacionUnidad from "../img/evaluacionUnidad.svg";
 import { useState } from "react";
+import Evaluacion from "./Evaluacion";
+import preguntas from "../js/preguntas";
+import Carrusel from "./Carrusel";
 
 function U1() {
   const [c1, setC1] = useState(0);
@@ -108,19 +111,21 @@ function U1() {
       <div className="bg-light mx-auto py-5">
         <h2 className="text-center text-primary mb-5">Contents</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
-          <div className="px-5">
+          <div className="px-5" style={{width: '100%'}}>
             <div className="d-flex align-items-center mb-3">
               <h4 className="text-primary">1.1 J2EE Architecture</h4>
               <div className="desplegable" onClick={() => handleMostrar(1)}>
                 {c1 == 0 ? (
                   <i className="bi bi-chevron-down"></i>
                 ) : (
-                  <i class="bi bi-chevron-up"></i>
+                  <i className="bi bi-chevron-up"></i>
                 )}
               </div>
             </div>
             {c1 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={0}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -136,7 +141,9 @@ function U1() {
               </div>
             </div>
             {c2 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={1}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -152,7 +159,9 @@ function U1() {
               </div>
             </div>
             {c3 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={2}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -168,7 +177,9 @@ function U1() {
               </div>
             </div>
             {c4 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={3}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -184,7 +195,9 @@ function U1() {
               </div>
             </div>
             {c5 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={4}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -202,7 +215,9 @@ function U1() {
               </div>
             </div>
             {c6 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={5}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -218,7 +233,9 @@ function U1() {
               </div>
             </div>
             {c7 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={6}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -234,7 +251,9 @@ function U1() {
               </div>
             </div>
             {c8 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{width:600}}>
+                <Carrusel unidad={7}/>
+              </div>
             ) : (
               <div></div>
             )}
@@ -252,7 +271,7 @@ function U1() {
             />
           </div>
           <div className="px-5">
-            <a href="#" className="text-decoration-none">
+            <a href="https://drive.google.com/file/d/1d01KMbP_3C-Q-Tb9nv1-dsRXwWwK6vHQ/view?usp=sharing" className="text-decoration-none" target="_blank">
               Unit I - Introduction to Web Applications
             </a>
           </div>
@@ -261,7 +280,7 @@ function U1() {
       <div className="bg-light mx-auto py-5">
         <h2 className="text-center mb-5">Evaluation</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
-          <div className="px-5">
+          <div className="my-auto px-5">
             <p>
             Below is a list of assessments you can take to reinforce the knowledge you have gained in this learning unit.
             </p>
@@ -274,6 +293,9 @@ function U1() {
             />
           </div>
         </div>
+        <hr className="mx-auto my-5" style={{width: '90%'}}/>
+        
+        <Evaluacion preguntas={preguntas[0]} />
       </div>
     </div>
   );

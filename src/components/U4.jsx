@@ -2,6 +2,8 @@ import ObjetivoParticular from "../img/objetivoParticular.svg";
 import Presentaciones from "../img/presentaciones.svg";
 import EvaluacionUnidad from "../img/evaluacionUnidad.svg";
 import { useState } from "react";
+import Evaluacion from "./Evaluacion";
+import preguntas from "../js/preguntas";
 
 function U4() {
   const [c1, setC1] = useState(0);
@@ -53,7 +55,7 @@ function U4() {
   return (
     <div>
       <div
-        className="bg-primary d-flex flex-column justify-content-center align-items-center"
+        className="bg-unidad d-flex flex-column justify-content-center align-items-center"
         style={{ height: "40vh" }}
       >
         <h2 className="text-white">
@@ -61,7 +63,7 @@ function U4() {
         </h2>
       </div>
       <div className="mx-auto py-5">
-        <h2 className="text-center text-primary mb-5">Objetivo Particular</h2>
+        <h2 className="text-center text-primary mb-5">Particular Objective</h2>
         <div
           className="d-flex justify-content-around mx-auto"
           style={{ width: "80%" }}
@@ -81,7 +83,7 @@ function U4() {
         </div>
       </div>
       <div className="bg-light mx-auto py-5">
-        <h2 className="text-center text-primary mb-5">Contenidos</h2>
+        <h2 className="text-center text-primary mb-5">Contents</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
           <div className="px-5">
             <div className="d-flex align-items-center mb-3">
@@ -168,7 +170,7 @@ function U4() {
         </div>
       </div>
       <div className="mx-auto py-5">
-        <h2 className="text-center mb-5">Presentaciones</h2>
+        <h2 className="text-center mb-5">Presentations</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
           <div className="my-auto">
             <img
@@ -185,13 +187,11 @@ function U4() {
         </div>
       </div>
       <div className="bg-light mx-auto py-5">
-        <h2 className="text-center mb-5">Evaluación</h2>
+        <h2 className="text-center mb-5">Evaluation</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
           <div className="px-5">
             <p>
-              A continuación se muestra una lista con las evaluaciones que
-              puedes realizar para reforzar los conocimientos que has adquirido
-              en esta unidad de aprendizaje
+            Below is a list of assessments you can take to reinforce the knowledge you have gained in this learning unit.
             </p>
           </div>
           <div className="my-auto">
@@ -202,6 +202,9 @@ function U4() {
             />
           </div>
         </div>
+        <hr className="mx-auto my-5" style={{width: '90%'}}/>
+        
+        <Evaluacion preguntas={preguntas[3]} />
       </div>
     </div>
   );

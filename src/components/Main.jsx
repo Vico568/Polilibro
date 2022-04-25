@@ -191,7 +191,7 @@ function Main() {
               
             </p>
             <br />
-            <a href="#" className="d-block text-decoration-none">Ver Presentaciones</a>
+            <a href="https://drive.google.com/drive/folders/1JUfdxUJNfamMudzafWYmPA0wVnEZkk2C?usp=sharing" className="d-block text-decoration-none" target="_blank">See Presentations</a>
           </div>
         </div>
       </div>

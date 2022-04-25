@@ -1,8 +1,4 @@
-import Contacto from "./components/Contacto";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Main from "./components/Main";
-import Navegador from "./components/Navegador";
 import Temario from "./components/Temario";
 import U1 from "./components/U1";
 import U2 from "./components/U2";
@@ -14,7 +10,6 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
