@@ -141,6 +141,84 @@ import IMG_U3_T3_S1_32 from '../img/U3/3_JavaServerPages_pages-to-jpg-0032.jpg';
 import IMG_U3_T3_S1_33 from '../img/U3/3_JavaServerPages_pages-to-jpg-0033.jpg';
 import IMG_U3_T3_S1_34 from '../img/U3/3_JavaServerPages_pages-to-jpg-0034.jpg';
 
+import IMG_U4_T1_S1_1 from '../img/U4/JavaPersistenceAPI_page-0001.jpg';
+import IMG_U4_T1_S1_2 from '../img/U4/JavaPersistenceAPI_page-0002.jpg';
+import IMG_U4_T1_S1_3 from '../img/U4/JavaPersistenceAPI_page-0003.jpg';
+import IMG_U4_T1_S1_4 from '../img/U4/JavaPersistenceAPI_page-0004.jpg';
+import IMG_U4_T1_S1_5 from '../img/U4/JavaPersistenceAPI_page-0005.jpg';
+import IMG_U4_T1_S1_6 from '../img/U4/JavaPersistenceAPI_page-0006.jpg';
+import IMG_U4_T1_S1_7 from '../img/U4/JavaPersistenceAPI_page-0007.jpg';
+import IMG_U4_T1_S1_8 from '../img/U4/JavaPersistenceAPI_page-0008.jpg';
+import IMG_U4_T1_S1_9 from '../img/U4/JavaPersistenceAPI_page-0009.jpg';
+import IMG_U4_T1_S1_10 from '../img/U4/JavaPersistenceAPI_page-0010.jpg';
+import IMG_U4_T1_S1_11 from '../img/U4/JavaPersistenceAPI_page-0011.jpg';
+import IMG_U4_T1_S1_13 from '../img/U4/JavaPersistenceAPI_page-0012.jpg';
+import IMG_U4_T1_S1_12 from '../img/U4/JavaPersistenceAPI_page-0013.jpg';
+import IMG_U4_T1_S1_14 from '../img/U4/JavaPersistenceAPI_page-0014.jpg';
+import IMG_U4_T1_S1_15 from '../img/U4/JavaPersistenceAPI_page-0015.jpg';
+import IMG_U4_T1_S1_16 from '../img/U4/JavaPersistenceAPI_page-0016.jpg';
+import IMG_U4_T1_S1_17 from '../img/U4/JavaPersistenceAPI_page-0017.jpg';
+import IMG_U4_T1_S1_18 from '../img/U4/JavaPersistenceAPI_page-0018.jpg';
+import IMG_U4_T1_S1_19 from '../img/U4/JavaPersistenceAPI_page-0019.jpg';
+import IMG_U4_T1_S1_20 from '../img/U4/JavaPersistenceAPI_page-0020.jpg';
+import IMG_U4_T1_S1_21 from '../img/U4/JavaPersistenceAPI_page-0021.jpg';
+import IMG_U4_T1_S1_22 from '../img/U4/JavaPersistenceAPI_page-0022.jpg';
+import IMG_U4_T1_S1_23 from '../img/U4/JavaPersistenceAPI_page-0023.jpg';
+import IMG_U4_T1_S1_24 from '../img/U4/JavaPersistenceAPI_page-0024.jpg';
+import IMG_U4_T1_S1_25 from '../img/U4/JavaPersistenceAPI_page-0025.jpg';
+import IMG_U4_T1_S1_26 from '../img/U4/JavaPersistenceAPI_page-0026.jpg';
+import IMG_U4_T1_S1_27 from '../img/U4/JavaPersistenceAPI_page-0027.jpg';
+import IMG_U4_T1_S1_28 from '../img/U4/JavaPersistenceAPI_page-0028.jpg';
+import IMG_U4_T1_S1_29 from '../img/U4/JavaPersistenceAPI_page-0029.jpg';
+import IMG_U4_T1_S1_30 from '../img/U4/JavaPersistenceAPI_page-0030.jpg';
+import IMG_U4_T1_S1_31 from '../img/U4/JavaPersistenceAPI_page-0031.jpg';
+import IMG_U4_T1_S1_32 from '../img/U4/JavaPersistenceAPI_page-0032.jpg';
+import IMG_U4_T1_S1_33 from '../img/U4/JavaPersistenceAPI_page-0033.jpg';
+import IMG_U4_T2_S1_1 from '../img/U4/IntroStruts_page-0001.jpg';
+import IMG_U4_T2_S1_2 from '../img/U4/IntroStruts_page-0002.jpg';
+import IMG_U4_T2_S1_3 from '../img/U4/IntroStruts_page-0003.jpg';
+import IMG_U4_T2_S1_4 from '../img/U4/IntroStruts_page-0004.jpg';
+import IMG_U4_T2_S1_5 from '../img/U4/IntroStruts_page-0005.jpg';
+import IMG_U4_T2_S1_6 from '../img/U4/IntroStruts_page-0006.jpg';
+import IMG_U4_T2_S1_7 from '../img/U4/IntroStruts_page-0007.jpg';
+import IMG_U4_T2_S1_8 from '../img/U4/IntroStruts_page-0008.jpg';
+import IMG_U4_T2_S1_9 from '../img/U4/IntroStruts_page-0009.jpg';
+import IMG_U4_T2_S1_10 from '../img/U4/IntroStruts_page-0010.jpg';
+import IMG_U4_T2_S1_11 from '../img/U4/IntroStruts_page-0011.jpg';
+import IMG_U4_T2_S1_12 from '../img/U4/IntroStruts_page-0012.jpg';
+import IMG_U4_T2_S1_13 from '../img/U4/IntroStruts_page-0013.jpg';
+import IMG_U4_T2_S1_14 from '../img/U4/IntroStruts_page-0014.jpg';
+import IMG_U4_T2_S1_15 from '../img/U4/IntroStruts_page-0015.jpg';
+import IMG_U4_T2_S1_16 from '../img/U4/IntroStruts_page-0016.jpg';
+import IMG_U4_T2_S1_17 from '../img/U4/IntroStruts_page-0017.jpg';
+import IMG_U4_T2_S1_18 from '../img/U4/IntroStruts_page-0018.jpg';
+import IMG_U4_T2_S1_19 from '../img/U4/IntroStruts_page-0019.jpg';
+import IMG_U4_T2_S1_20 from '../img/U4/IntroStruts_page-0020.jpg';
+import IMG_U4_T2_S1_21 from '../img/U4/IntroStruts_page-0021.jpg';
+import IMG_U4_T3_S1_1 from '../img/U4/JavaServerFaces_page-0001.jpg';
+import IMG_U4_T3_S1_2 from '../img/U4/JavaServerFaces_page-0002.jpg';
+import IMG_U4_T3_S1_3 from '../img/U4/JavaServerFaces_page-0003.jpg';
+import IMG_U4_T3_S1_4 from '../img/U4/JavaServerFaces_page-0004.jpg';
+import IMG_U4_T3_S1_5 from '../img/U4/JavaServerFaces_page-0005.jpg';
+import IMG_U4_T3_S1_6 from '../img/U4/JavaServerFaces_page-0006.jpg';
+import IMG_U4_T3_S1_7 from '../img/U4/JavaServerFaces_page-0007.jpg';
+import IMG_U4_T3_S1_8 from '../img/U4/JavaServerFaces_page-0008.jpg';
+import IMG_U4_T3_S1_9 from '../img/U4/JavaServerFaces_page-0009.jpg';
+import IMG_U4_T3_S1_10 from '../img/U4/JavaServerFaces_page-0010.jpg';
+import IMG_U4_T3_S1_11 from '../img/U4/JavaServerFaces_page-0011.jpg';
+import IMG_U4_T3_S1_12 from '../img/U4/JavaServerFaces_page-0012.jpg';
+import IMG_U4_T3_S1_13 from '../img/U4/JavaServerFaces_page-0013.jpg';
+import IMG_U4_T3_S1_14 from '../img/U4/JavaServerFaces_page-0014.jpg';
+import IMG_U4_T3_S1_15 from '../img/U4/JavaServerFaces_page-0015.jpg';
+import IMG_U4_T3_S1_16 from '../img/U4/JavaServerFaces_page-0016.jpg';
+import IMG_U4_T3_S1_17 from '../img/U4/JavaServerFaces_page-0017.jpg';
+import IMG_U4_T3_S1_18 from '../img/U4/JavaServerFaces_page-0018.jpg';
+import IMG_U4_T3_S1_19 from '../img/U4/JavaServerFaces_page-0019.jpg';
+import IMG_U4_T3_S1_20 from '../img/U4/JavaServerFaces_page-0020.jpg';
+import IMG_U4_T3_S1_21 from '../img/U4/JavaServerFaces_page-0021.jpg';
+import IMG_U4_T3_S1_22 from '../img/U4/JavaServerFaces_page-0022.jpg';
+import IMG_U4_T3_S1_23 from '../img/U4/JavaServerFaces_page-0023.jpg';
+
 
 
 const diapositivas = [
@@ -319,6 +397,89 @@ const diapositivas = [
     IMG_U3_T3_S1_32,
     IMG_U3_T3_S1_33,
     IMG_U3_T3_S1_34,
+  ],
+  [
+    IMG_U4_T1_S1_1,
+    IMG_U4_T1_S1_2,
+    IMG_U4_T1_S1_3,
+    IMG_U4_T1_S1_4,
+    IMG_U4_T1_S1_5,
+    IMG_U4_T1_S1_6,
+    IMG_U4_T1_S1_7,
+    IMG_U4_T1_S1_8,
+    IMG_U4_T1_S1_9,
+    IMG_U4_T1_S1_10,
+    IMG_U4_T1_S1_11,
+    IMG_U4_T1_S1_12,
+    IMG_U4_T1_S1_13,
+    IMG_U4_T1_S1_14,
+    IMG_U4_T1_S1_15,
+    IMG_U4_T1_S1_16,
+    IMG_U4_T1_S1_17,
+    IMG_U4_T1_S1_18,
+    IMG_U4_T1_S1_19,
+    IMG_U4_T1_S1_20,
+    IMG_U4_T1_S1_21,
+    IMG_U4_T1_S1_22,
+    IMG_U4_T1_S1_23,
+    IMG_U4_T1_S1_24,
+    IMG_U4_T1_S1_25,
+    IMG_U4_T1_S1_26,
+    IMG_U4_T1_S1_27,
+    IMG_U4_T1_S1_28,
+    IMG_U4_T1_S1_29,
+    IMG_U4_T1_S1_30,
+    IMG_U4_T1_S1_31,
+    IMG_U4_T1_S1_32,
+    IMG_U4_T1_S1_33,
+  ],
+  [
+    IMG_U4_T2_S1_1,
+    IMG_U4_T2_S1_2,
+    IMG_U4_T2_S1_3,
+    IMG_U4_T2_S1_4,
+    IMG_U4_T2_S1_5,
+    IMG_U4_T2_S1_6,
+    IMG_U4_T2_S1_7,
+    IMG_U4_T2_S1_8,
+    IMG_U4_T2_S1_9,
+    IMG_U4_T2_S1_10,
+    IMG_U4_T2_S1_11,
+    IMG_U4_T2_S1_12,
+    IMG_U4_T2_S1_13,
+    IMG_U4_T2_S1_14,
+    IMG_U4_T2_S1_15,
+    IMG_U4_T2_S1_16,
+    IMG_U4_T2_S1_17,
+    IMG_U4_T2_S1_18,
+    IMG_U4_T2_S1_19,
+    IMG_U4_T2_S1_20,
+    IMG_U4_T2_S1_21,
+  ],
+  [
+    IMG_U4_T3_S1_1,
+    IMG_U4_T3_S1_2,
+    IMG_U4_T3_S1_3,
+    IMG_U4_T3_S1_4,
+    IMG_U4_T3_S1_5,
+    IMG_U4_T3_S1_6,
+    IMG_U4_T3_S1_7,
+    IMG_U4_T3_S1_8,
+    IMG_U4_T3_S1_9,
+    IMG_U4_T3_S1_10,
+    IMG_U4_T3_S1_11,
+    IMG_U4_T3_S1_12,
+    IMG_U4_T3_S1_13,
+    IMG_U4_T3_S1_14,
+    IMG_U4_T3_S1_15,
+    IMG_U4_T3_S1_16,
+    IMG_U4_T3_S1_17,
+    IMG_U4_T3_S1_18,
+    IMG_U4_T3_S1_19,
+    IMG_U4_T3_S1_20,
+    IMG_U4_T3_S1_21,
+    IMG_U4_T3_S1_22,
+    IMG_U4_T3_S1_23,
   ]
 ];
 

@@ -4,13 +4,12 @@ import EvaluacionUnidad from "../img/evaluacionUnidad.svg";
 import { useState } from "react";
 import Evaluacion from "./Evaluacion";
 import preguntas from "../js/preguntas";
+import Carrusel from "./Carrusel";
 
 function U4() {
   const [c1, setC1] = useState(0);
   const [c2, setC2] = useState(0);
   const [c3, setC3] = useState(0);
-  const [c4, setC4] = useState(0);
-  const [c5, setC5] = useState(0);
 
   const handleMostrar = (estado) => {
     switch (estado) {
@@ -33,20 +32,6 @@ function U4() {
           setC3(0);
         } else {
           setC3(1);
-        }
-        break;
-      case 4:
-        if (c4 == 1) {
-          setC4(0);
-        } else {
-          setC4(1);
-        }
-        break;
-      case 5:
-        if (c5 == 1) {
-          setC5(0);
-        } else {
-          setC5(1);
         }
         break;
     }
@@ -85,25 +70,27 @@ function U4() {
       <div className="bg-light mx-auto py-5">
         <h2 className="text-center text-primary mb-5">Contents</h2>
         <div className="d-flex mx-auto" style={{ width: "80%" }}>
-          <div className="px-5">
+          <div className="px-5" style={{ width: "100%" }}>
             <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">4.1 Model-View-Controller design pattern</h4>
+              <h4 className="text-primary">4.1 Java Persistence API (JPA)</h4>
               <div className="desplegable" onClick={() => handleMostrar(1)}>
                 {c1 == 0 ? (
                   <i className="bi bi-chevron-down"></i>
                 ) : (
-                  <i class="bi bi-chevron-up"></i>
+                  <i className="bi bi-chevron-up"></i>
                 )}
               </div>
             </div>
             {c1 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{ width: 600 }}>
+              <Carrusel unidad={18} />
+            </div>
             ) : (
               <div></div>
             )}
 
             <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">4.2 Basics of STRUTS framework</h4>
+              <h4 className="text-primary">4.2 Struts</h4>
               <div className="desplegable" onClick={() => handleMostrar(2)}>
                 {c2 == 0 ? (
                   <i className="bi bi-chevron-down"></i>
@@ -113,13 +100,15 @@ function U4() {
               </div>
             </div>
             {c2 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{ width: 600 }}>
+              <Carrusel unidad={19} />
+            </div>
             ) : (
               <div></div>
             )}
 
             <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">4.3 Developing Applications with STRUTS</h4>
+              <h4 className="text-primary">4.3 Java Server Faces (JSF)</h4>
               <div className="desplegable" onClick={() => handleMostrar(3)}>
                 {c3 == 0 ? (
                   <i className="bi bi-chevron-down"></i>
@@ -129,43 +118,13 @@ function U4() {
               </div>
             </div>
             {c3 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
+              <div className="mx-auto" style={{ width: 600 }}>
+              <Carrusel unidad={20} />
+            </div>
             ) : (
               <div></div>
             )}
 
-            <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">4.4 Hibernate</h4>
-              <div className="desplegable" onClick={() => handleMostrar(4)}>
-                {c4 == 0 ? (
-                  <i className="bi bi-chevron-down"></i>
-                ) : (
-                  <i class="bi bi-chevron-up"></i>
-                )}{" "}
-              </div>
-            </div>
-            {c4 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
-            ) : (
-              <div></div>
-            )}
-
-            <div className="d-flex align-items-center mb-3">
-              <h4 className="text-primary">4.5 Java Server Faces (JSF)</h4>
-              <div className="desplegable" onClick={() => handleMostrar(5)}>
-                {c5 == 0 ? (
-                  <i className="bi bi-chevron-down"></i>
-                ) : (
-                  <i class="bi bi-chevron-up"></i>
-                )}{" "}
-              </div>
-            </div>
-            {c5 == 1 ? (
-              <div className="bg-black" style={{ width: 50, height: 50 }}></div>
-            ) : (
-              <div></div>
-            )}
-            
           </div>
         </div>
       </div>
@@ -202,9 +161,9 @@ function U4() {
             />
           </div>
         </div>
-        <hr className="mx-auto my-5" style={{width: '90%'}}/>
+        {/* <hr className="mx-auto my-5" style={{width: '90%'}}/>
         
-        <Evaluacion preguntas={preguntas[3]} />
+        <Evaluacion preguntas={preguntas[3]} /> */}
       </div>
     </div>
   );
